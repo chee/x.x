@@ -1,0 +1,56 @@
+x.x - local development servers
+===============================
+
+        || ||
+       @@@@@@@
+       ( x.x )  ~
+    o-(    o-)   ~
+        || ||
+       📐o📐o
+
+
+requirements
+------------
+
+• an apple macintosh computer running the apple macintosh operating system [https://www.apple.com/mac/]
+• macports [https://www.macports.org/install.php]
+
+guide
+-----
+
+get the repo and run bootstrap
+
+	git clone https://github.com/chee/x.x
+	cd x.x
+	./bootstrap.sh
+
+this'll install nginx and dnsmasq and it'll print out some instructions.
+
+• make sure to add 127.0.0.1 to your dns servers in the Network pane in
+  sysprefs.
+• pick a string of text over 3 letters long
+  when you are generating the key:
+  		 1. enter that string and press <return> three times
+		 2. press <return> 16 times
+		 3. enter that string and press <return> one last time
+• when it's done you can open up the generated ca.pem in Keychain Access.app
+  and trust it.
+  to do that:
+  	  1. import it as a System cert
+	  2. find and double click it (by default it is called internet widgits pty
+	     ltd)
+	  3. open up the little 🔻 Triangle called Trust
+	  4. set to Always Trust
+	  5. close the window, saving your settings
+
+now you can map domains to ports by running:
+
+	 ./map.bash $name $port
+
+example:
+
+	./map.bash tycoon 1234
+	open https://tycoon.x.x
+
+                                ---------------
+that's
