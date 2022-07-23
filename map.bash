@@ -42,6 +42,6 @@ server {
 }
 nginxconf
 
-sudo port reload nginx
+sudo nginx -s reload
 open "https://$name.x.x"
 # ln -s "$root/$name.nginx" "$root/port"
