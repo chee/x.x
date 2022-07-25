@@ -31,9 +31,9 @@ this'll install nginx and dnsmasq and it'll print out some instructions.
   sysprefs.
 • pick a string of text over 3 letters long
   when you are generating the key:
-  		 1. enter that string and press <return> three times
-		 2. press <return> 16 times
-		 3. enter that string and press <return> one last time
+  		 1. (enter the string then press <return>) three times
+		 2. (press <return>) 16 times
+		 3. (enter that string then press <return>) one last time
 • when it's done you can open up the generated ca.pem in Keychain Access.app
   and trust it.
   to do that:
