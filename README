@@ -14,7 +14,7 @@ requirements
 
 • an apple macintosh computer running the apple macintosh operating system
   [https://www.apple.com/mac/]
-• macports [https://www.macports.org/install.php]
+• macports [https://www.macports.org/install.php] or homebrew [https://brew.sh/]
 
 guide
 -----
@@ -28,7 +28,7 @@ get the repo and run bootstrap
 this'll install nginx and dnsmasq and it'll print out some instructions.
 
 • make sure to add 127.0.0.1 to your dns servers in the Network pane in
-  sysprefs.
+  sysprefs
 • pick a string of text over 3 letters long
   when you are generating the key:
   		 1. (enter the string then press <return>) three times
